@@ -1,6 +1,6 @@
 class Fish
   attr_reader :name, :species
-  attr_writer :mood
+  attr_accessor :mood
   
   def initalize(name)
     @name = name
