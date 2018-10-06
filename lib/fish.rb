@@ -5,5 +5,6 @@ class Fish
   def initalize(name)
     @name = name
     self.species = "fish"
+    self.mood = "nervous"
   end
 end
