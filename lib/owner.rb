@@ -11,7 +11,7 @@ class Owner
     self.species=()
   end
   
-  def species=(species=human)
+  def species=(species = "human")
   end
   
   def self.count
