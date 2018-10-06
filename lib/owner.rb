@@ -34,6 +34,9 @@ class Owner
   def buy_fish(name)
     @pets[:fishes] << fish.new(name)
   end
+  
+  def walk_dogs
+    @pets[:dogs].each { |n| n.mood = "happy"}
+  end
 end
 
-* When an owner plays with a cat or feeds a fish or walks a dog, that pet will get happier. Remember that the `pets` method stores all of an owners pets. The `@pets` hash stored in that method is full of *instances of the `Cat`/`Dog`/`Fish` class*. That means you can call `Cat`/`Dog`/`Fish` instance methods (such as `.mood=`) on those pets. 
