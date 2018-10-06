@@ -5,17 +5,21 @@ class Owner
   
   @@all = []
   
-  def initialize
+  def initialize(pets)
     @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
     self.species = "human"
   end
   
-  def count
+  def self.count
     @@all.length
   end
   
-  def reset_all
+  def self.all
+    @@all
+  end
+  
+  def self.reset_all
     @@all.clear
   end
   
@@ -59,6 +63,8 @@ class Owner
     fish_count = @pets[:fishes].length
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
+  
+  
 end
 
 
