@@ -5,5 +5,6 @@ class Dog
   def initalize(name)
     @name = name
     self.species = "dog"
+    self.mood = "nervous"
   end
 end
