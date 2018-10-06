@@ -1,7 +1,7 @@
 class Owner
   
   attr_accessor :pets
-  attr_writer   :species
+  # attr_writer   :species
   
   @@all = []
   
@@ -9,6 +9,9 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
     self.species = "human"
+  end
+  
+  def species=(species=human)
   end
   
   def self.count
