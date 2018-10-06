@@ -1,5 +1,5 @@
 class Cat
-  attr_reader :name, :species
+  attr_reader :name, :species, :mood
   
   def initalize(name)
     @name = name
