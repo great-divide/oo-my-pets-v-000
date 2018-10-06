@@ -5,6 +5,7 @@ class Cat
   def initalize(name)
     @name = name
     self.species = "cat"
+    self.mood = "nervous"
   end
   
 end
