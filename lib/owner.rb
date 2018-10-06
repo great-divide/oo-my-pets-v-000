@@ -49,7 +49,9 @@ class Owner
   end
   
   def feed_fish
-    @pets[:fish].each { |n| n.mood = "happy"}
+    if @pets[:fish].length > 0
+      @pets[:fish].each { |n| n.mood = "happy"}
+    end
   end
   
   def sell_pets
