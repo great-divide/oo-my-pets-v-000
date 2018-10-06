@@ -41,15 +41,15 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].each_value { |n| n.mood = "happy"}
+    @pets[:dogs].each { |n| n.mood = "happy"}
   end
 
   def play_with_cats
-    @pets[:cats].each_value { |n| n.mood = "happy"}
+    @pets[:cats].each { |n| n.mood = "happy"}
   end
   
   def feed_fish
-    @pets[:fish].each_value { |n| n.mood = "happy"}
+    @pets[:fish].each { |n| n.mood = "happy"}
   end
   
   def sell_pets
