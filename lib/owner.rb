@@ -10,6 +10,10 @@ class Owner
     @@all << self
   end
   
+  def count
+    @@all.length
+  end
+  
   def buy_cat(name)
     @pets[:cats] << cat.new(name)
   end
